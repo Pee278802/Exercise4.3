@@ -8,10 +8,12 @@ class Strawberry extends Fruit{						//subclass of fruit
 		super(name);
 		this.weight = weight;
 		this.price = price;
+		System.out.println();
 	}
 	public void totalPrice() {				//overriding
-		double totalPrice = weight * price;
+		double totalPrice = this.weight * this.price;
 		System.out.println("The total price for Strawberry is: " + totalPrice);
+		System.out.println();
 	}
 	
 	public String toString() { //toString //overriding
